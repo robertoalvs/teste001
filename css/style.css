@@ -1,0 +1,139 @@
+@charset "UTF-8";
+
+:root {
+
+    --cor1: #8A148C;
+    --cor1-1: #610963;
+    --cor2: #9517A6;
+    --cor2-2: rgb(207, 49, 207); 
+    --cor3: #E4C2F2;
+    --cor4: #030A8C;
+    --cor5: #E4E4F2;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+
+    background-color: var(--cor5)
+}
+
+main {
+
+    background-color: var(--cor5);
+    max-width: 900px;
+    margin: auto;
+    margin-top: 30px;
+}
+
+header {
+
+    margin-top: 20px;
+}
+
+header >nav {
+
+    background-color: var(--cor3);
+    padding: 10px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    max-width: 880px;
+    margin: auto;
+    display: block;
+    
+}
+
+header >nav ul {
+
+    list-style-position: inside;
+    list-style-type: disc;
+    color: #8A148C;
+    columns: 3;
+    padding: 1px;
+}
+
+header >nav > ul> li a {
+
+    text-decoration: none;
+    color: #610963;
+    font-size: .970em;
+    
+}
+
+a.link:hover {
+
+    text-decoration: underline;
+    color: rgb(207, 49, 207);
+}
+
+article > .sessao1 h1 {
+
+    color: var(--cor4);
+    font-weight: bolder;
+    font-size: 1.5em;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+    
+}
+
+article > .sessao1 p {
+
+    color: var(--cor4);
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+    color: var(--cor2);
+    line-height: 1.6;
+    font-size: .875em;
+    max-width: 600px;
+    
+    
+}
+
+article > .sessao2 h2 {
+
+    color: var(--cor4);
+    font-weight: bolder;
+    font-size: 1.3em;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+    
+}
+
+article > .sessao2 p {
+
+    color: var(--cor4);
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+    color: var(--cor2);
+    line-height: 1.6;
+    font-size: .875em;
+    max-width: 600px;
+}
+
+article > .sessao3 h2 {
+
+    color: var(--cor4);
+    font-weight: bolder;
+    font-size: 1.6em;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+    
+}
+
+article > .sessao3 p {
+
+    color: var(--cor4);
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+    color: var(--cor2);
+    line-height: 1.6;
+    font-size: .875em;
+    max-width: 600px;
+    
+}
