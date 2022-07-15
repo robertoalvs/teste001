@@ -9,6 +9,8 @@
     --cor3: #E4C2F2;
     --cor4: #030A8C;
     --cor5: #E4E4F2;
+    --body: #eef;
+    --footer: #dde5ff;
 }
 
 * {
@@ -18,12 +20,14 @@
 
 body {
 
-    background-color: var(--cor5)
+    /* background-color: var(--cor5) */
+    background-color: #eef;
 }
 
 main {
 
-    background-color: var(--cor5);
+    /* background-color: var(--cor5); */
+    background-color: #eef;
     max-width: 900px;
     margin: auto;
     margin-top: 30px;
@@ -51,8 +55,15 @@ header >nav ul {
     list-style-position: inside;
     list-style-type: disc;
     color: #8A148C;
-    columns: 3;
-    padding: 1px;
+    /* padding-top: 10px;
+    padding-bottom: 20px;
+    padding-left: 10px; */
+    padding: 10px 20px 20px ;
+}
+header >nav li {
+
+    float: left;
+    margin-right: 2em;
 }
 
 header >nav > ul> li a {
@@ -97,7 +108,7 @@ article > .sessao2 h2 {
 
     color: var(--cor4);
     font-weight: bolder;
-    font-size: 1.3em;
+    font-size: 1.2em;
     font-family: Arial, Helvetica, sans-serif;
     padding: 10px;
     
@@ -119,7 +130,7 @@ article > .sessao3 h2 {
 
     color: var(--cor4);
     font-weight: bolder;
-    font-size: 1.6em;
+    font-size: 1.2em;
     font-family: Arial, Helvetica, sans-serif;
     padding: 10px;
     
@@ -136,4 +147,58 @@ article > .sessao3 p {
     font-size: .875em;
     max-width: 600px;
     
+}
+
+aside {
+
+    background-color: var(--footer);
+    max-width: 200px;
+    padding: 20px;
+    margin-bottom: 15px;
+}
+
+aside >section h1 {
+
+    color: #030A8C;
+    margin-bottom: 10px;
+    line-height: 1.4em;
+    font-weight: bolder;
+    font-size: 1.2em;
+}
+
+.sessao4 p {
+
+    line-height: 1.6em;
+    font-size: .875em;
+    color: var(--cor2);
+}
+
+aside ul {
+
+    padding: 20px;
+    font-size: .875em;
+    color: var(--cor2);
+}
+
+section#p {
+
+    padding: 20px;
+    font-size: .875em;
+    color: var(--cor2);
+    text-align: left;
+
+    
+}
+
+footer {
+
+    max-width: 880px;
+    background-color: #dde5ff;
+    /* background-color: #b1b5f0b8; */
+    padding: 10px;
+}
+
+footer p {
+
+    color: #909;
 }
