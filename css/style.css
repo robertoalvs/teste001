@@ -1,5 +1,9 @@
 @charset "UTF-8";
+@font-face {
 
+    font-family: 'arialblack';
+    src: url('../fonte/Arial\ Black.ttf') formart ('truetype');
+}
 :root {
 
     --cor1: #8A148C;
@@ -11,6 +15,9 @@
     --cor5: #E4E4F2;
     --body: #eef;
     --footer: #dde5ff;
+
+    /* Fontes */
+    --fonte-arial: 'arialblack', Arial, sans-serif;
 }
 
 * {
@@ -36,17 +43,18 @@ main {
 header {
 
     margin-top: 20px;
+    
 }
 
 header >nav {
 
     background-color: var(--cor3);
-    padding: 10px;
-    margin-top: 40px;
-    margin-bottom: 20px;
-    max-width: 880px;
-    margin: auto;
+    padding: 2px 5px 13px;
+    max-width: 855px;
+   /* margin: auto; */
     display: block;
+    margin: 31px 197px 40px 188px;
+    
     
 }
 
@@ -85,7 +93,7 @@ article > .sessao1 h1 {
     color: var(--cor4);
     font-weight: bolder;
     font-size: 1.5em;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: var(--fonte-arial);
     padding: 10px;
     
 }
@@ -100,6 +108,7 @@ article > .sessao1 p {
     line-height: 1.6;
     font-size: .875em;
     max-width: 600px;
+    margin-bottom: 15px;
     
     
 }
@@ -109,7 +118,7 @@ article > .sessao2 h2 {
     color: var(--cor4);
     font-weight: bolder;
     font-size: 1.2em;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: var(--fonte-arial);
     padding: 10px;
     
 }
@@ -124,6 +133,8 @@ article > .sessao2 p {
     line-height: 1.6;
     font-size: .875em;
     max-width: 600px;
+    margin-bottom: 15px;
+
 }
 
 article > .sessao3 h2 {
@@ -133,6 +144,12 @@ article > .sessao3 h2 {
     font-size: 1.2em;
     font-family: Arial, Helvetica, sans-serif;
     padding: 10px;
+}
+
+.img {
+
+    float: left;
+    margin-bottom: -20px;
     
 }
 
@@ -146,6 +163,7 @@ article > .sessao3 p {
     line-height: 1.6;
     font-size: .875em;
     max-width: 600px;
+    margin-bottom: 15px;
     
 }
 
@@ -155,6 +173,13 @@ aside {
     max-width: 200px;
     padding: 20px;
     margin-bottom: 15px;
+    float: right;
+    position: absolute;
+    left: 64%;
+    top: 29%;
+    transform: (-64%, -50%);
+    
+
 }
 
 aside >section h1 {
@@ -163,7 +188,8 @@ aside >section h1 {
     margin-bottom: 10px;
     line-height: 1.4em;
     font-weight: bolder;
-    font-size: 1.2em;
+    font-size: 1em;
+    font-family: var(--fonte-arial);
 }
 
 .sessao4 p {
@@ -171,6 +197,9 @@ aside >section h1 {
     line-height: 1.6em;
     font-size: .875em;
     color: var(--cor2);
+   /* letter-spacing: 0.5px; */
+   word-spacing: 0.3em;
+   text-align: justify;
 }
 
 aside ul {
@@ -192,10 +221,12 @@ section#p {
 
 footer {
 
-    max-width: 880px;
+    max-width: 855px;
     background-color: #dde5ff;
     /* background-color: #b1b5f0b8; */
-    padding: 10px;
+    padding: 11px;
+    margin: 8px;
+    margin-right: 28px;
 }
 
 footer p {
